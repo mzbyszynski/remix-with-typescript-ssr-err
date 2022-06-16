@@ -1,5 +1,19 @@
 # Remix example
 
+## To Reproduce Rendering Error:
+
+1. Start App in a docker container:
+    ```sh
+    docker build -t remix-with-typescript-ssr-err .
+    docker run -it -p 3000 remix-with-typescript-ssr-err
+    ```
+1. Open in browser: http://localhost:3000/
+
+1. You should see an error like this in the dev console:
+
+    > react-dom.development.js:86 Warning: Prop `className` did not match. Server: "MuiTypography-root MuiTypography-h4 MuiTypography-gutterBottom css-gtvj52" Client: "MuiTypography-root MuiTypography-h4 MuiTypography-gutterBottom css-1vw6mcs-MuiTypography-root"
+
+----------
 ## How to use
 
 Download the example [or clone the repo](https://github.com/mui/material-ui):
